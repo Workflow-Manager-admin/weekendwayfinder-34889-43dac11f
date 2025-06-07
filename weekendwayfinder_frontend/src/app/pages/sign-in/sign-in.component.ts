@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 // PUBLIC_INTERFACE
 @Component({
@@ -15,9 +16,9 @@ export class SignInComponent {
   signInForm: FormGroup;
   hidePassword = true;
   formError: string | null = null;
-  signedIn = false;
 
-  constructor(private fb: FormBuilder) {
+  // eslint-disable-next-line no-unused-vars
+  constructor(private fb: FormBuilder, private router: Router) {
     this.signInForm = fb.group({
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(5)]]
@@ -31,6 +32,7 @@ export class SignInComponent {
       return;
     }
     // For demo, accept any input as "success"
-    this.signedIn = true;
+    // On success, navigate to Trip Planner page
+    this.router.navigate(['/planner']);
   }
 }

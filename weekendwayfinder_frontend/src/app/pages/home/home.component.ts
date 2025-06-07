@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 // PUBLIC_INTERFACE
 @Component({
@@ -9,8 +10,12 @@ import { Component } from '@angular/core';
 })
 /** Home page: hero image, intro, CTA. */
 export class HomeComponent {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars, no-unused-vars
+  constructor(private _router: Router) {}
+
   // PUBLIC_INTERFACE
   startPlanning() {
-    // Empty stub for template event, actual navigation logic handled in routing/template.
+    // Navigate to the trip planner page
+    this._router.navigate(['/planner']);
   }
 }

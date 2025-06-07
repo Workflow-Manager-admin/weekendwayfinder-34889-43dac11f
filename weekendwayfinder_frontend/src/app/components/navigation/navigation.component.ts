@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 // PUBLIC_INTERFACE
 @Component({
@@ -9,8 +10,12 @@ import { Component } from '@angular/core';
 })
 /** Responsive nav: Home, Trip Planner, Suggestions, Sign Out. */
 export class NavigationComponent {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars, no-unused-vars
+  constructor(private _router: Router) {}
+
   // PUBLIC_INTERFACE
   navigate(route: string) {
-    // Empty stub for template event, actual navigation logic handled in app routing.
+    // Navigate using Angular Router for logo/brand click
+    this._router.navigate(['/' + route]);
   }
 }

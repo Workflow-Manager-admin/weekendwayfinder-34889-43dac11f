@@ -1,0 +1,27 @@
+:root {
+  --ww-primary: #2D5F5D;
+  --ww-secondary: #F7C873;
+  --ww-accent: #F25C54;
+  --ww-font: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  font-family: var(--ww-font);
+  background: #fbfbfb;
+  margin: 0;
+  color: var(--ww-primary);
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  outline: none;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}

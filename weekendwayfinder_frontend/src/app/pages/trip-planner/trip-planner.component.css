@@ -1,0 +1,75 @@
+.planner-bg {
+  min-height: 85vh;
+  width: 100vw;
+  background: url('https://images.unsplash.com/photo-1455656678494-4d1fcd3b28b6?auto=format&fit=crop&w=1400&q=80') center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.planner-card {
+  background: rgba(255,255,255,0.94);
+  box-shadow: 0 8px 28px rgba(45,95,93, 0.14);
+  border-radius: 1rem;
+  padding: 2.5rem 2.3rem;
+  min-width: 312px;
+  max-width: 390px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: var(--ww-primary, #2D5F5D);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.8rem;
+}
+
+.input-row {
+  margin-bottom: 1.3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 500;
+  color: #415550;
+  margin-bottom: 0.2rem;
+}
+
+select {
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: 1.5px solid #b3cac7;
+  font-size: 1rem;
+  background: #f8fbfb;
+  color: #2D5F5D;
+}
+
+.planner-btn {
+  width: 100%;
+  background: var(--ww-accent, #F25C54);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.85rem 0;
+  margin-top: 0.9rem;
+  box-shadow: 0px 3px 8px #efd7c821;
+  cursor: pointer;
+  transition: background 0.16s;
+}
+
+.planner-btn:disabled {
+  background: #cbc7c7;
+  color: #888;
+  cursor: not-allowed;
+}
+
+@media (max-width: 500px) {
+  .planner-card {
+    min-width: 97vw;
+    max-width: 99vw;
+    padding: 1.2rem 0.6rem;
+  }
+}

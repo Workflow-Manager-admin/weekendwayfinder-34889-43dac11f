@@ -1,0 +1,111 @@
+.suggestions-bg {
+  min-height: 85vh;
+  width: 100vw;
+  background: linear-gradient(120deg, var(--ww-secondary, #F7C873) 25%, #fff 95%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.suggestions-content {
+  background: rgba(255,255,255,0.95);
+  border-radius: 1.1rem;
+  box-shadow: 0px 6px 24px #F25C5420;
+  padding: 2.3rem 2rem 2rem 2rem;
+  max-width: 600px;
+  min-width: 320px;
+  text-align: center;
+}
+
+h2 {
+  color: var(--ww-primary, #2D5F5D);
+  margin-bottom: 1.3rem;
+  font-weight: 700;
+}
+
+.preferences-recap {
+  display: flex;
+  gap: 1.35rem;
+  font-size: 1rem;
+  color: #705F3A;
+  justify-content: center;
+  margin-bottom: 1.7rem;
+}
+
+.suggestion-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.23rem;
+}
+
+.suggestion-card {
+  display: flex;
+  align-items: stretch;
+  background: #fff;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  box-shadow: 0px 2px 12px #2D5F5D13;
+}
+
+.suggestion-card img {
+  width: 110px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 0.76rem 1rem 0.76rem 1rem;
+  flex: 1;
+  text-align: left;
+}
+
+.card-content h3 {
+  font-size: 1.16rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: var(--ww-accent, #F25C54);
+}
+
+.card-content .place {
+  color: var(--ww-primary, #2D5F5D);
+  font-weight: 500;
+  margin-bottom: 0.38rem;
+}
+
+.plan-again-btn {
+  margin-top: 1.5rem;
+  background: var(--ww-secondary, #F7C873);
+  color: var(--ww-primary, #2D5F5D);
+  font-weight: 600;
+  border: none;
+  border-radius: 0.45rem;
+  padding: 0.72rem 2rem;
+  cursor: pointer;
+  transition: background 0.11s;
+  font-size: 1.07rem;
+}
+
+.plan-again-btn:hover {
+  background: var(--ww-primary, #2D5F5D);
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .suggestions-content {
+    padding: 1rem 0.2rem;
+    min-width: 95vw;
+    max-width: 99vw;
+  }
+  .suggestion-card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .suggestion-card img {
+    width: 100vw;
+    height: 150px;
+    border-radius: 0.8rem 0.8rem 0 0;
+  }
+  .card-content {
+    text-align: center;
+  }
+}

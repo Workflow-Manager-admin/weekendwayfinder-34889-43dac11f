@@ -1,0 +1,76 @@
+.ww-nav {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  background: var(--ww-primary, #2D5F5D);
+  color: #fff;
+  position: relative;
+  min-height: 60px;
+}
+
+.ww-nav-logo {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.35rem;
+  letter-spacing: 1px;
+  color: var(--ww-secondary, #F7C873);
+  margin-right: auto;
+  user-select: none;
+}
+
+.ww-brand {
+  color: var(--ww-secondary, #F7C873);
+}
+
+.ww-nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.ww-nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.4rem 0;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.ww-nav-links li a.active,
+.ww-nav-links li a:hover {
+  color: var(--ww-accent, #F25C54);
+}
+
+.ww-menu-toggle,
+.ww-hamburger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .ww-nav-links {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    right: 0;
+    top: 60px;
+    width: 60vw;
+    min-width: 160px;
+    background: var(--ww-primary, #2D5F5D);
+    z-index: 22;
+    border-top: 2px solid var(--ww-secondary, #F7C873);
+  }
+  .ww-menu-toggle:checked + .ww-hamburger + .ww-nav-links {
+    display: flex;
+  }
+  .ww-hamburger {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    user-select: none;
+    color: #fff;
+  }
+}

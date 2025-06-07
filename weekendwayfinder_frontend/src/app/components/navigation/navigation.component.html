@@ -1,0 +1,13 @@
+<nav class="ww-nav">
+  <div class="ww-nav-logo" (click)="navigate('home')">
+    <span class="ww-brand">WeekendWayfinder</span>
+  </div>
+  <input type="checkbox" id="ww-menu-toggle" class="ww-menu-toggle" />
+  <label for="ww-menu-toggle" class="ww-hamburger">&#9776;</label>
+  <ul class="ww-nav-links">
+    <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+    <li><a routerLink="/planner" routerLinkActive="active">Trip Planner</a></li>
+    <li><a routerLink="/suggestions" routerLinkActive="active">Suggestions</a></li>
+    <li><a routerLink="/signin" routerLinkActive="active">Sign Out</a></li>
+  </ul>
+</nav>

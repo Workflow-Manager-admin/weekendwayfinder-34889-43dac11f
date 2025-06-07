@@ -1,0 +1,28 @@
+<div class="planner-bg">
+  <div class="planner-card">
+    <h2>Plan your ideal weekend</h2>
+    <form [formGroup]="plannerForm" (ngSubmit)="getSuggestions()">
+      <div class="input-row">
+        <label>Mood</label>
+        <select formControlName="mood">
+          <option *ngFor="let opt of moodOptions" [value]="opt.value">{{opt.label}}</option>
+        </select>
+      </div>
+      <div class="input-row">
+        <label>Travel Distance</label>
+        <select formControlName="distance">
+          <option *ngFor="let opt of distanceOptions" [value]="opt.value">{{opt.label}}</option>
+        </select>
+      </div>
+      <div class="input-row">
+        <label>Budget</label>
+        <select formControlName="budget">
+          <option *ngFor="let opt of budgetOptions" [value]="opt.value">{{opt.label}}</option>
+        </select>
+      </div>
+      <button type="submit" class="planner-btn" [disabled]="plannerForm.invalid">
+        Get Suggestions
+      </button>
+    </form>
+  </div>
+</div>

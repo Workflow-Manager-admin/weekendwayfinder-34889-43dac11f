@@ -1,0 +1,21 @@
+<div class="suggestions-bg">
+  <div class="suggestions-content">
+    <h2>AI Trip Suggestions</h2>
+    <div class="preferences-recap">
+      <span>Mood: <b>{{ mood }}</b></span>
+      <span>Distance: <b>{{ distance }}</b></span>
+      <span>Budget: <b>{{ budget }}</b></span>
+    </div>
+    <div class="suggestion-list">
+      <div class="suggestion-card" *ngFor="let s of suggestions">
+        <img [src]="s.img" alt="{{s.title}}" />
+        <div class="card-content">
+          <h3>{{ s.title }}</h3>
+          <p class="place">{{ s.place }}</p>
+          <p>{{ s.description }}</p>
+        </div>
+      </div>
+    </div>
+    <button class="plan-again-btn" routerLink="/planner">Plan Again</button>
+  </div>
+</div>

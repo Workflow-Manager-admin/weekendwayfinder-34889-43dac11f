@@ -10,12 +10,11 @@ import { Router } from '@angular/router';
 })
 /** Responsive nav: Home, Trip Planner, Suggestions, Sign Out. */
 export class NavigationComponent {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars, no-unused-vars
-  constructor(private _router: Router) {}
-
   // PUBLIC_INTERFACE
   navigate(route: string) {
-    // Navigate using Angular Router for logo/brand click
-    this._router.navigate(['/' + route]);
+    // Safe navigation using window.location for logo/brand
+    if (typeof window !== 'undefined') {
+      window.location.href = '/' + route;
+    }
   }
 }

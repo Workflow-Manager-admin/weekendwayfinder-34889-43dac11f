@@ -41,11 +41,26 @@ export class AiSuggestionsComponent {
   budget: string = '';
   suggestions: any[] = [];
 
-  constructor(router: Router) {
-    const state = router.getCurrentNavigation()?.extras.state as any;
-    this.mood = state?.mood ?? 'relaxing';
-    this.distance = state?.distance ?? 'short';
-    this.budget = state?.budget ?? 'economy';
+  constructor(private router: Router) {
+    let state: any = undefined;
+
+    // Angular navigation state (client navigation)
+    const nav = this.router.getCurrentNavigation();
+    if (nav && nav.extras && nav.extras.state && nav.extras.state['mood']) {
+      state = nav.extras.state;
+    } else if (typeof window !== 'undefined' && window.history && window.history.state && window.history.state['mood']) {
+      // Fallback for browser reload
+      state = window.history.state;
+    }
+
+    if (!state?.mood || !state?.distance || !state?.budget) {
+      this.router.navigate(['/planner']);
+      return;
+    }
+
+    this.mood = state.mood ?? 'relaxing';
+    this.distance = state.distance ?? 'short';
+    this.budget = state.budget ?? 'economy';
     this.fetchSuggestions();
   }
 

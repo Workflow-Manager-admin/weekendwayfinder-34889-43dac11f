@@ -10,12 +10,11 @@ import { Router } from '@angular/router';
 })
 /** Home page: hero image, intro, CTA. */
 export class HomeComponent {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars, no-unused-vars
-  constructor(private _router: Router) {}
-
   // PUBLIC_INTERFACE
   startPlanning() {
-    // Navigate to the trip planner page
-    this._router.navigate(['/planner']);
+    // Navigate to planner page in client context
+    if (typeof window !== 'undefined') {
+      window.location.href = '/planner';
+    }
   }
 }

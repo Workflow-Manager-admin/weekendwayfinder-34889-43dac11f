@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 const MOOD_OPTIONS = [
   { label: 'Relaxing', value: 'relaxing' },
@@ -43,7 +44,9 @@ export class TripPlannerComponent {
 
   // PUBLIC_INTERFACE
   getSuggestions() {
-    if (this.plannerForm.invalid) return;
-    // Navigation should be handled via routerLink in the template or another approach.
+    // For SSR-safe demo, programmatic navigation is not performed here.
+    // The template disables submit if invalid.
+    // In a full app, Router navigation would be here.
+    return;
   }
 }

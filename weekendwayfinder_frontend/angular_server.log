@@ -16,8 +16,8 @@ styles.css           | styles                   | 497 bytes |
                      | Initial total            |  98.83 kB
 
 Lazy chunk files     | Names                    |  Raw size
-chunk-GATJ4O5H.js    | sign-in-component        |   8.97 kB | 
 chunk-6TNYD3M3.js    | ai-suggestions-component |   7.96 kB | 
+chunk-Z76D5OU3.js    | sign-in-component        |   7.75 kB | 
 chunk-4O5KDENI.js    | trip-planner-component   |   7.38 kB | 
 chunk-BBV22QDN.js    | home-component           |   3.80 kB | 
 
@@ -25,18 +25,18 @@ chunk-BBV22QDN.js    | home-component           |   3.80 kB |
 Server bundles      
 Initial chunk files  | Names                    |  Raw size
 polyfills.server.mjs | polyfills.server         | 572.91 kB | 
-chunk-YAV6MMRU.mjs   | -                        |   7.82 kB | 
+chunk-GZI5NW63.mjs   | -                        |   7.82 kB | 
 server.mjs           | server                   |   1.42 kB | 
 main.server.mjs      | main.server              | 831 bytes | 
 chunk-FFILDKJJ.mjs   | -                        | 788 bytes | 
 
 Lazy chunk files     | Names                    |  Raw size
-chunk-4EIQR5NE.mjs   | sign-in-component        |   9.00 kB | 
 chunk-Y7KUBWHS.mjs   | ai-suggestions-component |   8.00 kB | 
+chunk-D7XJ6PF6.mjs   | sign-in-component        |   7.79 kB | 
 chunk-72N6SAQB.mjs   | trip-planner-component   |   7.42 kB | 
 chunk-ABP2CVP2.mjs   | home-component           |   3.83 kB | 
 
-Application bundle generation complete. [2.556 seconds]
+Application bundle generation complete. [2.512 seconds]
 
 Watch mode enabled. Watching for file changes...
 NOTE: Raw file sizes do not reflect development server per-request transformations.
@@ -44,19 +44,496 @@ NOTE: Raw file sizes do not reflect development server per-request transformatio
   ➜  Network: http://172.17.0.2:3000/
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.595 seconds]
+Browser bundles    
+Initial chunk files | Names                  |  Raw size
+main.js             | main                   |   7.38 kB | 
 
-✘ [ERROR] NG9: Property 'signedIn' does not exist on type 'SignInComponent'. [plugin angular-compiler]
+Lazy chunk files    | Names                  |  Raw size
+chunk-267QT5H6.js   | trip-planner-component |   7.74 kB | 
 
-    src/app/pages/sign-in/sign-in.component.html:3:26:
-      3 │     <ng-container *ngIf="!signedIn; else signedInMsg">
-        ╵                           ~~~~~~~~
 
-  Error occurs in the template of component SignInComponent.
+Server bundles     
+Initial chunk files | Names                  |  Raw size
+chunk-DTF2T5TQ.mjs  | -                      |   7.82 kB | 
+server.mjs          | server                 |   1.42 kB | 
+main.server.mjs     | main.server            | 831 bytes | 
 
-    src/app/pages/sign-in/sign-in.component.ts:9:15:
-      9 │   templateUrl: './sign-in.component.html',
-        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lazy chunk files    | Names                  |  Raw size
+chunk-ASO7EGUH.mjs  | trip-planner-component |   7.78 kB | 
+
+Application bundle generation complete. [0.668 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names                    |  Raw size
+main.js             | main                     |   7.38 kB | 
+
+Lazy chunk files    | Names                    |  Raw size
+chunk-FH7HCK7A.js   | ai-suggestions-component |   8.34 kB | 
+
+
+Server bundles     
+Initial chunk files | Names                    |  Raw size
+chunk-ZKYGGSEA.mjs  | -                        |   7.82 kB | 
+server.mjs          | server                   |   1.42 kB | 
+main.server.mjs     | main.server              | 831 bytes | 
+
+Lazy chunk files    | Names                    |  Raw size
+chunk-GGFO6HXP.mjs  | ai-suggestions-component |   8.37 kB | 
+
+Application bundle generation complete. [0.328 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       |  Raw size
+main.js             | main        |   7.30 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       |  Raw size
+chunk-VO24LQNU.mjs  | -           |   7.74 kB | 
+server.mjs          | server      |   1.42 kB | 
+main.server.mjs     | main.server | 831 bytes | 
+
+Application bundle generation complete. [0.280 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names          |  Raw size
+main.js             | main           |   7.30 kB | 
+
+Lazy chunk files    | Names          |  Raw size
+chunk-BE7XK2PX.js   | home-component |   3.72 kB | 
+
+
+Server bundles     
+Initial chunk files | Names          |  Raw size
+chunk-NP5QP4C4.mjs  | -              |   7.74 kB | 
+server.mjs          | server         |   1.42 kB | 
+main.server.mjs     | main.server    | 831 bytes | 
+
+Lazy chunk files    | Names          |  Raw size
+chunk-IYP5POBW.mjs  | home-component |   3.75 kB | 
+
+Application bundle generation complete. [0.188 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names                  |  Raw size
+main.js             | main                   |   7.30 kB | 
+
+Lazy chunk files    | Names                  |  Raw size
+chunk-7G24ABJW.js   | trip-planner-component |   7.67 kB | 
+
+
+Server bundles     
+Initial chunk files | Names                  |  Raw size
+chunk-3JHHMHUG.mjs  | -                      |   7.74 kB | 
+server.mjs          | server                 |   1.42 kB | 
+main.server.mjs     | main.server            | 831 bytes | 
+
+Lazy chunk files    | Names                  |  Raw size
+chunk-OL6R6G6Q.mjs  | trip-planner-component |   7.70 kB | 
+
+Application bundle generation complete. [0.197 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names                    |  Raw size
+main.js             | main                     |   7.30 kB | 
+
+Lazy chunk files    | Names                    |  Raw size
+chunk-556SGGB5.js   | ai-suggestions-component |   8.36 kB | 
+
+
+Server bundles     
+Initial chunk files | Names                    |  Raw size
+chunk-MVOCIXPL.mjs  | -                        |   7.74 kB | 
+server.mjs          | server                   |   1.42 kB | 
+main.server.mjs     | main.server              | 831 bytes | 
+
+Lazy chunk files    | Names                    |  Raw size
+chunk-TDLXQC3V.mjs  | ai-suggestions-component |   8.39 kB | 
+
+Application bundle generation complete. [0.167 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names                    |  Raw size
+main.js             | main                     |   7.36 kB | 
+chunk-MBAFJDP5.js   | -                        |   1.13 kB | 
+
+Lazy chunk files    | Names                    |  Raw size
+chunk-TP2K6674.js   | ai-suggestions-component |   8.36 kB | 
+chunk-H3KQDHH3.js   | sign-in-component        |   7.75 kB | 
+chunk-IZUF566M.js   | trip-planner-component   |   7.67 kB | 
+chunk-2DLMQGS4.js   | home-component           |   3.72 kB | 
+
+
+Server bundles     
+Initial chunk files | Names                    |  Raw size
+chunk-I5S2FVYF.mjs  | -                        |   7.80 kB | 
+server.mjs          | server                   |   1.42 kB | 
+chunk-3BBEPZ4A.mjs  | -                        |   1.17 kB | 
+main.server.mjs     | main.server              | 831 bytes | 
+
+Lazy chunk files    | Names                    |  Raw size
+chunk-YUQOO2I4.mjs  | ai-suggestions-component |   8.39 kB | 
+chunk-2YQSKGEL.mjs  | sign-in-component        |   7.79 kB | 
+chunk-JQZ2PJQE.mjs  | trip-planner-component   |   7.70 kB | 
+chunk-VPOPUW4T.mjs  | home-component           |   3.75 kB | 
+
+Application bundle generation complete. [0.157 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names          |  Raw size
+main.js             | main           |   7.36 kB | 
+
+Lazy chunk files    | Names          |  Raw size
+chunk-AXNSLZSM.js   | home-component |   3.72 kB | 
+
+
+Server bundles     
+Initial chunk files | Names          |  Raw size
+chunk-ET5CAMZZ.mjs  | -              |   7.80 kB | 
+server.mjs          | server         |   1.42 kB | 
+main.server.mjs     | main.server    | 831 bytes | 
+
+Lazy chunk files    | Names          |  Raw size
+chunk-VQ7AH5JK.mjs  | home-component |   3.75 kB | 
+
+Application bundle generation complete. [0.204 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names                  |  Raw size
+main.js             | main                   |   7.36 kB | 
+
+Lazy chunk files    | Names                  |  Raw size
+chunk-IGH5TFJV.js   | trip-planner-component |   7.69 kB | 
+
+
+Server bundles     
+Initial chunk files | Names                  |  Raw size
+chunk-WR2OFNAQ.mjs  | -                      |   7.80 kB | 
+server.mjs          | server                 |   1.42 kB | 
+main.server.mjs     | main.server            | 831 bytes | 
+
+Lazy chunk files    | Names                  |  Raw size
+chunk-VFMCE6T7.mjs  | trip-planner-component |   7.73 kB | 
+
+Application bundle generation complete. [0.201 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names                    |  Raw size
+main.js             | main                     |   7.36 kB | 
+
+Lazy chunk files    | Names                    |  Raw size
+chunk-ZJWMI4EV.js   | ai-suggestions-component |   8.27 kB | 
+
+
+Server bundles     
+Initial chunk files | Names                    |  Raw size
+chunk-22MXX6BH.mjs  | -                        |   7.80 kB | 
+server.mjs          | server                   |   1.42 kB | 
+main.server.mjs     | main.server              | 831 bytes | 
+
+Lazy chunk files    | Names                    |  Raw size
+chunk-BLRJ3M2U.mjs  | ai-suggestions-component |   8.31 kB | 
+
+Application bundle generation complete. [0.223 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       |  Raw size
+main.js             | main        |   7.30 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       |  Raw size
+chunk-5TKYF2WX.mjs  | -           |   7.74 kB | 
+server.mjs          | server      |   1.42 kB | 
+main.server.mjs     | main.server | 831 bytes | 
+
+Application bundle generation complete. [0.183 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names          |  Raw size
+main.js             | main           |   7.30 kB | 
+
+Lazy chunk files    | Names          |  Raw size
+chunk-NHSMQMZG.js   | home-component |   3.71 kB | 
+
+
+Server bundles     
+Initial chunk files | Names          |  Raw size
+chunk-LSDGTRSI.mjs  | -              |   7.74 kB | 
+server.mjs          | server         |   1.42 kB | 
+main.server.mjs     | main.server    | 831 bytes | 
+
+Lazy chunk files    | Names          |  Raw size
+chunk-V6AZUMXD.mjs  | home-component |   3.75 kB | 
+
+Application bundle generation complete. [0.182 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names                  |  Raw size
+main.js             | main                   |   7.30 kB | 
+
+Lazy chunk files    | Names                  |  Raw size
+chunk-IZUF566M.js   | trip-planner-component |   7.67 kB | 
+
+
+Server bundles     
+Initial chunk files | Names                  |  Raw size
+chunk-LA3QDE43.mjs  | -                      |   7.74 kB | 
+server.mjs          | server                 |   1.42 kB | 
+main.server.mjs     | main.server            | 831 bytes | 
+
+Lazy chunk files    | Names                  |  Raw size
+chunk-JQZ2PJQE.mjs  | trip-planner-component |   7.70 kB | 
+
+Application bundle generation complete. [0.176 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.344 seconds]
+
+✘ [ERROR] TS4111: Property 'mood' comes from an index signature, so it must be accessed with ['mood']. [plugin angular-compiler]
+
+    src/app/pages/ai-suggestions/ai-suggestions.component.ts:50:66:
+      50 │ ...(nav && nav.extras && nav.extras.state && nav.extras.state.mood) {
+         ╵                                                               ~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.177 seconds]
+
+✘ [ERROR] NG9: Property 'navigate' does not exist on type 'NavigationComponent'. [plugin angular-compiler]
+
+    src/app/components/navigation/navigation.component.html:2:36:
+      2 │   <div class="ww-nav-logo" (click)="navigate('home')">
+        ╵                                     ~~~~~~~~
+
+  Error occurs in the template of component NavigationComponent.
+
+    src/app/components/navigation/navigation.component.ts:7:15:
+      7 │   templateUrl: './navigation.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS4111: Property 'mood' comes from an index signature, so it must be accessed with ['mood']. [plugin angular-compiler]
+
+    src/app/pages/ai-suggestions/ai-suggestions.component.ts:50:66:
+      50 │ ...(nav && nav.extras && nav.extras.state && nav.extras.state.mood) {
+         ╵                                                               ~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.198 seconds]
+
+✘ [ERROR] NG9: Property 'navigate' does not exist on type 'NavigationComponent'. [plugin angular-compiler]
+
+    src/app/components/navigation/navigation.component.html:2:36:
+      2 │   <div class="ww-nav-logo" (click)="navigate('home')">
+        ╵                                     ~~~~~~~~
+
+  Error occurs in the template of component NavigationComponent.
+
+    src/app/components/navigation/navigation.component.ts:7:15:
+      7 │   templateUrl: './navigation.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS4111: Property 'mood' comes from an index signature, so it must be accessed with ['mood']. [plugin angular-compiler]
+
+    src/app/pages/ai-suggestions/ai-suggestions.component.ts:50:66:
+      50 │ ...(nav && nav.extras && nav.extras.state && nav.extras.state.mood) {
+         ╵                                                               ~~~~
+
+
+✘ [ERROR] NG9: Property 'startPlanning' does not exist on type 'HomeComponent'. [plugin angular-compiler]
+
+    src/app/pages/home/home.component.html:6:37:
+      6 │ ... class="cta-btn" (click)="startPlanning()">Plan My Weekend</button>
+        ╵                              ~~~~~~~~~~~~~
+
+  Error occurs in the template of component HomeComponent.
+
+    src/app/pages/home/home.component.ts:7:15:
+      7 │   templateUrl: './home.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.190 seconds]
+
+✘ [ERROR] NG9: Property 'navigate' does not exist on type 'NavigationComponent'. [plugin angular-compiler]
+
+    src/app/components/navigation/navigation.component.html:2:36:
+      2 │   <div class="ww-nav-logo" (click)="navigate('home')">
+        ╵                                     ~~~~~~~~
+
+  Error occurs in the template of component NavigationComponent.
+
+    src/app/components/navigation/navigation.component.ts:7:15:
+      7 │   templateUrl: './navigation.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS4111: Property 'mood' comes from an index signature, so it must be accessed with ['mood']. [plugin angular-compiler]
+
+    src/app/pages/ai-suggestions/ai-suggestions.component.ts:50:66:
+      50 │ ...(nav && nav.extras && nav.extras.state && nav.extras.state.mood) {
+         ╵                                                               ~~~~
+
+
+✘ [ERROR] NG9: Property 'startPlanning' does not exist on type 'HomeComponent'. [plugin angular-compiler]
+
+    src/app/pages/home/home.component.html:6:37:
+      6 │ ... class="cta-btn" (click)="startPlanning()">Plan My Weekend</button>
+        ╵                              ~~~~~~~~~~~~~
+
+  Error occurs in the template of component HomeComponent.
+
+    src/app/pages/home/home.component.ts:7:15:
+      7 │   templateUrl: './home.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG9: Property 'getSuggestions' does not exist on type 'TripPlannerComponent'. [plugin angular-compiler]
+
+    src/app/pages/trip-planner/trip-planner.component.html:4:48:
+      4 │     <form [formGroup]="plannerForm" (ngSubmit)="getSuggestions()">
+        ╵                                                 ~~~~~~~~~~~~~~
+
+  Error occurs in the template of component TripPlannerComponent.
+
+    src/app/pages/trip-planner/trip-planner.component.ts:26:15:
+      26 │   templateUrl: './trip-planner.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.236 seconds]
+
+✘ [ERROR] NG9: Property 'navigate' does not exist on type 'NavigationComponent'. [plugin angular-compiler]
+
+    src/app/components/navigation/navigation.component.html:2:36:
+      2 │   <div class="ww-nav-logo" (click)="navigate('home')">
+        ╵                                     ~~~~~~~~
+
+  Error occurs in the template of component NavigationComponent.
+
+    src/app/components/navigation/navigation.component.ts:7:15:
+      7 │   templateUrl: './navigation.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG9: Property 'startPlanning' does not exist on type 'HomeComponent'. [plugin angular-compiler]
+
+    src/app/pages/home/home.component.html:6:37:
+      6 │ ... class="cta-btn" (click)="startPlanning()">Plan My Weekend</button>
+        ╵                              ~~~~~~~~~~~~~
+
+  Error occurs in the template of component HomeComponent.
+
+    src/app/pages/home/home.component.ts:7:15:
+      7 │   templateUrl: './home.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG9: Property 'getSuggestions' does not exist on type 'TripPlannerComponent'. [plugin angular-compiler]
+
+    src/app/pages/trip-planner/trip-planner.component.html:4:48:
+      4 │     <form [formGroup]="plannerForm" (ngSubmit)="getSuggestions()">
+        ╵                                                 ~~~~~~~~~~~~~~
+
+  Error occurs in the template of component TripPlannerComponent.
+
+    src/app/pages/trip-planner/trip-planner.component.ts:26:15:
+      26 │   templateUrl: './trip-planner.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.184 seconds]
+
+✘ [ERROR] NG9: Property 'startPlanning' does not exist on type 'HomeComponent'. [plugin angular-compiler]
+
+    src/app/pages/home/home.component.html:6:37:
+      6 │ ... class="cta-btn" (click)="startPlanning()">Plan My Weekend</button>
+        ╵                              ~~~~~~~~~~~~~
+
+  Error occurs in the template of component HomeComponent.
+
+    src/app/pages/home/home.component.ts:7:15:
+      7 │   templateUrl: './home.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG9: Property 'getSuggestions' does not exist on type 'TripPlannerComponent'. [plugin angular-compiler]
+
+    src/app/pages/trip-planner/trip-planner.component.html:4:48:
+      4 │     <form [formGroup]="plannerForm" (ngSubmit)="getSuggestions()">
+        ╵                                                 ~~~~~~~~~~~~~~
+
+  Error occurs in the template of component TripPlannerComponent.
+
+    src/app/pages/trip-planner/trip-planner.component.ts:26:15:
+      26 │   templateUrl: './trip-planner.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.200 seconds]
+
+✘ [ERROR] NG9: Property 'getSuggestions' does not exist on type 'TripPlannerComponent'. [plugin angular-compiler]
+
+    src/app/pages/trip-planner/trip-planner.component.html:4:48:
+      4 │     <form [formGroup]="plannerForm" (ngSubmit)="getSuggestions()">
+        ╵                                                 ~~~~~~~~~~~~~~
+
+  Error occurs in the template of component TripPlannerComponent.
+
+    src/app/pages/trip-planner/trip-planner.component.ts:26:15:
+      26 │   templateUrl: './trip-planner.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 ❯ Changes detected. Rebuilding...
@@ -64,99 +541,32 @@ Application bundle generation failed. [0.595 seconds]
 Browser bundles     
 Initial chunk files  | Names                    |  Raw size
 polyfills.js         | polyfills                |  90.20 kB | 
-main.js              | main                     |   7.38 kB | 
+main.js              | main                     |   7.20 kB | 
 chunk-YQOESBWP.js    | -                        | 754 bytes | 
 styles.css           | styles                   | 497 bytes | 
 
-                     | Initial total            |  98.83 kB
+                     | Initial total            |  98.65 kB
 
 Lazy chunk files     | Names                    |  Raw size
-chunk-6TNYD3M3.js    | ai-suggestions-component |   7.96 kB | 
-chunk-5OXG2NCX.js    | sign-in-component        |   7.71 kB | 
-chunk-4O5KDENI.js    | trip-planner-component   |   7.38 kB | 
-chunk-BBV22QDN.js    | home-component           |   3.80 kB | 
+chunk-PAVKKL3N.js    | ai-suggestions-component |   8.41 kB | 
+chunk-Z76D5OU3.js    | sign-in-component        |   7.75 kB | 
+chunk-GIBG33LH.js    | trip-planner-component   |   7.35 kB | 
+chunk-OI6WBM6B.js    | home-component           |   3.62 kB | 
 
 
 Server bundles      
 Initial chunk files  | Names                    |  Raw size
 polyfills.server.mjs | polyfills.server         | 572.91 kB | 
-chunk-WNXWBGGP.mjs   | -                        |   7.82 kB | 
+chunk-H6YCSV3N.mjs   | -                        |   7.64 kB | 
 server.mjs           | server                   |   1.42 kB | 
 main.server.mjs      | main.server              | 831 bytes | 
 chunk-FFILDKJJ.mjs   | -                        | 788 bytes | 
 
 Lazy chunk files     | Names                    |  Raw size
-chunk-Y7KUBWHS.mjs   | ai-suggestions-component |   8.00 kB | 
-chunk-2SYWHXNS.mjs   | sign-in-component        |   7.74 kB | 
-chunk-72N6SAQB.mjs   | trip-planner-component   |   7.42 kB | 
-chunk-ABP2CVP2.mjs   | home-component           |   3.83 kB | 
+chunk-C4G3NKPN.mjs   | ai-suggestions-component |   8.44 kB | 
+chunk-D7XJ6PF6.mjs   | sign-in-component        |   7.79 kB | 
+chunk-VEXMTQNJ.mjs   | trip-planner-component   |   7.38 kB | 
+chunk-4J5QLZFF.mjs   | home-component           |   3.65 kB | 
 
-Application bundle generation complete. [0.242 seconds]
+Application bundle generation complete. [0.181 seconds]
 
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names             |  Raw size
-main.js             | main              |   7.38 kB | 
-
-Lazy chunk files    | Names             |  Raw size
-chunk-FWHXJFA6.js   | sign-in-component |   7.71 kB | 
-
-
-Server bundles     
-Initial chunk files | Names             |  Raw size
-chunk-JBTYW42L.mjs  | -                 |   7.82 kB | 
-server.mjs          | server            |   1.42 kB | 
-main.server.mjs     | main.server       | 831 bytes | 
-
-Lazy chunk files    | Names             |  Raw size
-chunk-6MW3KP6I.mjs  | sign-in-component |   7.75 kB | 
-
-Application bundle generation complete. [0.344 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names             |  Raw size
-main.js             | main              |   7.38 kB | 
-
-Lazy chunk files    | Names             |  Raw size
-chunk-5OXG2NCX.js   | sign-in-component |   7.71 kB | 
-
-
-Server bundles     
-Initial chunk files | Names             |  Raw size
-chunk-WNXWBGGP.mjs  | -                 |   7.82 kB | 
-server.mjs          | server            |   1.42 kB | 
-main.server.mjs     | main.server       | 831 bytes | 
-
-Lazy chunk files    | Names             |  Raw size
-chunk-2SYWHXNS.mjs  | sign-in-component |   7.74 kB | 
-
-Application bundle generation complete. [0.287 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names             |  Raw size
-main.js             | main              |   7.38 kB | 
-
-Lazy chunk files    | Names             |  Raw size
-chunk-Z76D5OU3.js   | sign-in-component |   7.75 kB | 
-
-
-Server bundles     
-Initial chunk files | Names             |  Raw size
-chunk-GZI5NW63.mjs  | -                 |   7.82 kB | 
-server.mjs          | server            |   1.42 kB | 
-main.server.mjs     | main.server       | 831 bytes | 
-
-Lazy chunk files    | Names             |  Raw size
-chunk-D7XJ6PF6.mjs  | sign-in-component |   7.79 kB | 
-
-Application bundle generation complete. [0.255 seconds]
-
-Page reload sent to client(s).

@@ -1,6 +1,6 @@
+/* global window */
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Router } from '@angular/router';
 
 // Sample suggestion data for demonstration.
 const SUGGESTIONS = [
@@ -41,20 +41,21 @@ export class AiSuggestionsComponent {
   budget: string = '';
   suggestions: any[] = [];
 
-  constructor(private router: Router) {
+  constructor() {
     let state: any = undefined;
 
-    // Angular navigation state (client navigation)
-    const nav = this.router.getCurrentNavigation();
-    if (nav && nav.extras && nav.extras.state && nav.extras.state['mood']) {
-      state = nav.extras.state;
-    } else if (typeof window !== 'undefined' && window.history && window.history.state && window.history.state['mood']) {
+    // Try Angular navigation state (client navigation)
+    // Note: this is omitted, as router is not injected due to SSR/lint restriction.
+
+    if (typeof window !== 'undefined' && window.history && window.history.state && window.history.state['mood']) {
       // Fallback for browser reload
       state = window.history.state;
     }
 
     if (!state?.mood || !state?.distance || !state?.budget) {
-      this.router.navigate(['/planner']);
+      if (typeof window !== 'undefined') {
+        window.location.href = '/planner';
+      }
       return;
     }
 

@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, FormGroup, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
 
 const MOOD_OPTIONS = [
   { label: 'Relaxing', value: 'relaxing' },
@@ -9,15 +8,16 @@ const MOOD_OPTIONS = [
 ];
 
 const DISTANCE_OPTIONS = [
-  { label: '< 100 km', value: 'short' },
-  { label: '100-300 km', value: 'medium' },
-  { label: '300+ km', value: 'long' },
+  { label: 'Under 50 miles', value: 'under-50' },
+  { label: '50–150 miles', value: '50-150' },
+  { label: '150–300 miles', value: '150-300' },
+  { label: '300+ miles', value: '300-plus' }
 ];
 
 const BUDGET_OPTIONS = [
-  { label: 'Economy', value: 'economy' },
-  { label: 'Mid-range', value: 'mid' },
-  { label: 'Luxury', value: 'luxury' },
+  { label: '$', value: '$' },
+  { label: '$$', value: '$$' },
+  { label: '$$$', value: '$$$' }
 ];
 
 // PUBLIC_INTERFACE

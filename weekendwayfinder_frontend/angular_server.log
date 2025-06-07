@@ -158,3 +158,47 @@ chunk-ABP2CVP2.mjs  | home-component |   3.83 kB |
 Application bundle generation complete. [0.119 seconds]
 
 Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names             |  Raw size
+main.js             | main              |   7.38 kB | 
+
+Lazy chunk files    | Names             |  Raw size
+chunk-ZWLISGZV.js   | sign-in-component |   7.59 kB | 
+
+
+Server bundles     
+Initial chunk files | Names             |  Raw size
+chunk-7W4QN4QX.mjs  | -                 |   7.82 kB | 
+server.mjs          | server            |   1.42 kB | 
+main.server.mjs     | main.server       | 831 bytes | 
+
+Lazy chunk files    | Names             |  Raw size
+chunk-AACUBKSZ.mjs  | sign-in-component |   7.62 kB | 
+
+Application bundle generation complete. [0.233 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names             |  Raw size
+main.js             | main              |   7.38 kB | 
+
+Lazy chunk files    | Names             |  Raw size
+chunk-GATJ4O5H.js   | sign-in-component |   8.97 kB | 
+
+
+Server bundles     
+Initial chunk files | Names             |  Raw size
+chunk-YAV6MMRU.mjs  | -                 |   7.82 kB | 
+server.mjs          | server            |   1.42 kB | 
+main.server.mjs     | main.server       | 831 bytes | 
+
+Lazy chunk files    | Names             |  Raw size
+chunk-4EIQR5NE.mjs  | sign-in-component |   9.00 kB | 
+
+Application bundle generation complete. [0.209 seconds]
+
+Page reload sent to client(s).

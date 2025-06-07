@@ -15,6 +15,7 @@ export class SignInComponent {
   signInForm: FormGroup;
   hidePassword = true;
   formError: string | null = null;
+  signedIn = false;
 
   constructor(private fb: FormBuilder) {
     this.signInForm = fb.group({
@@ -30,5 +31,6 @@ export class SignInComponent {
       return;
     }
     // For demo, accept any input as "success"
+    this.signedIn = true;
   }
 }
